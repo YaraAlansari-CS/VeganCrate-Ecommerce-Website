@@ -110,7 +110,8 @@ VeganCrate-Ecommerce-Website/
 
 ## 👩‍💻 My Role
 
-As a **core developer**, I was responsible for:
+As the **Core Developer**, I contributed to:
+
 - Designing the **database schema** and managing it via phpMyAdmin.
 - Building the **backend PHP API** and integrating with MySQL.
 - Implementing **AJAX** for dynamic frontend updates.
