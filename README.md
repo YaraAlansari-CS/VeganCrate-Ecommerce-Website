@@ -73,6 +73,7 @@
 
 ## 📁 Project Structure
 
+```text
 VeganCrate-Ecommerce-Website/
 ├── admin/ # Admin dashboard (manage users, products, vendors, shipping)
 ├── vendor/ # Vendor dashboard (manage own products and orders)
@@ -81,7 +82,7 @@ VeganCrate-Ecommerce-Website/
 ├── assets/ # CSS, JS, images
 ├── database/ # SQL export file
 └── README.md # This file
-
+```
 
 ---
 
