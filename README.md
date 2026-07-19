@@ -16,6 +16,19 @@
 
 ---
 
+## 📄 Documentation
+
+- **Final Report:** [Final Report](https://drive.google.com/file/d/18xrQSiriiAXdydM0kRyID8Saak0Sy51e/view?usp=sharing)
+
+---
+
+## 🎥 Demo
+
+▶️ **Watch the project demo here:**  
+[Demo Video](https://drive.google.com/file/d/1nXlrnkcmSo6qZpXQeLMEt_KCw3q8SnuN/view?usp=sharing)
+
+---
+
 ## 👥 User Roles
 
 | **Role** | **Permissions** |
