@@ -75,18 +75,16 @@
 
 ```text
 VeganCrate-Ecommerce-Website/
-├── backend/ # PHP backend logic (API endpoints, authentication, order processing)
-├── frontend/ # User-facing pages (HTML, CSS, JavaScript) for customers, admin, vendor
 ├── assets/ # Images, CSS stylesheets, and frontend JavaScript files
-├── includes/ # Shared PHP files (database connection, global functions, config)
-├── database/ # Database schema and migrations (if organized)
+├── backend/ # PHP backend logic (API endpoints, authentication, order processing)
 ├── data/ # Static data files (e.g., XML for payment methods, sample data)
-├── logs/ # System logs for debugging and monitoring
+├── database/ # Database schema and migrations
+│ └── vegancrate_db.sql # Main SQL dump (exported from phpMyAdmin)
+├── frontend/ # User-facing pages (HTML, CSS, JavaScript) for customers, admin, vendor
+├── includes/ # Shared PHP files (database connection, global functions, config)
 ├── .htaccess # Apache server configuration (URL rewriting, security rules)
-├── vegancrate_db.sql # Main SQL dump (exported from phpMyAdmin)
 └── README.md # This file
 ```
-
 ---
 
 ## 🚀 How to Run Locally
