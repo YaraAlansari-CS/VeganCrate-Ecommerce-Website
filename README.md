@@ -24,7 +24,7 @@
 
 ## 🎥 Demo
 
-▶️ **Watch the project demo here:**  [Demo Video](https://drive.google.com/file/d/1nXlrnkcmSo6qZpXQeLMEt_KCw3q8SnuN/view?usp=sharing)
+▶️ **Watch the project demo here:**  [Demo Video](https://drive.google.com/file/d/1e9T4LISYiVuIJdKR4gthA3kP7CAb15D4/view?usp=sharing)
 
 ---
 
