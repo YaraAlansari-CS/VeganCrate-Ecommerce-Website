@@ -1,0 +1,193 @@
+/* ✅ الهيرو */
+.hero {
+    background: url('../assets/images/BG.jpg') no-repeat center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    color: #000;
+    z-index: 2;
+}
+
+.hero-content h3 {
+    font-size: 36px;
+}
+
+.btn {
+    background: #27ae60;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* ✅ التصنيفات */
+.categories h2 {
+    text-align: center;
+}
+
+/* ✅ قائمة التصنيفات */
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* ✅ تصحيح تنسيق الروابط داخل التصنيفات */
+.category-list a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+.category {
+    background: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.category:hover {
+    background: #27ae60;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* ✅ المنتجات */
+.products {
+    padding: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    width: 220px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ جعل الصورة رابطًا ينقل المستخدم لصفحة التفاصيل */
+.product a {
+    display: block;
+    text-decoration: none; /* منع ظهور خط تحت الصورة */
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* ✅ اسم المنتج بخط عريض */
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* ✅ السعر بلون أخضر وبخط عريض */
+.product-price {
+    color: #27ae60;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* ✅ أزرار إضافة للسلة */
+.product-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.add-to-cart {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.add-to-cart i {
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background: #2ecc71;
+    transform: scale(1.05);
+}
+
+.add-to-cart:active {
+    background: #27ae60;
+    transform: scale(0.98);
+}
+
+/* ✅ "كل المنتجات" في أقصى اليمين */
+.all-products {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.all-products i {
+    margin-left: 5px;
+}
+
+/* تأثير hover عند تمرير الماوس */
+.all-products:hover {
+    color: #27ae60;
+    text-decoration: underline;
+}

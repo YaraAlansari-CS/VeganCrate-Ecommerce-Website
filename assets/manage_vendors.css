@@ -1,0 +1,162 @@
+/* General Styling */
+.manage-vendors-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #27ae60;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #27ae60;
+    color: white;
+}
+
+/* Add Vendor Button */
+.add-vendor-btn {
+    background: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.add-vendor-btn:hover {
+    background: #2ecc71;
+}
+
+/* Action Buttons */
+.edit-btn, .delete-btn {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 2px;
+}
+
+.edit-btn {
+    background: #f1c40f;
+}
+
+.delete-btn {
+    background: #e74c3c;
+}
+
+.edit-btn:hover {
+    background: #f39c12;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+/* Scrollable Modal Content */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background: #27ae60;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background: #2ecc71;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 80%;
+    }
+
+    .add-vendor-btn {
+        width: 90%;
+        text-align: center;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}

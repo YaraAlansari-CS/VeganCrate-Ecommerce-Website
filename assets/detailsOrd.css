@@ -1,0 +1,126 @@
+/* ✅ Order Details Page */
+.order-details-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/* ✅ Centering the Content */
+h2, h3, p {
+    text-align: center;
+}
+
+.order-summary, .ordered-products, .order-actions {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* ✅ Order Status Bar (Progress Bar) */
+.order-status-bar {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.status-progress {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 40px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.status {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.status.active {
+    background-color: #27ae60;
+    color: white;
+}
+
+/* ✅ Order Info */
+.order-info {
+    margin-bottom: 30px;
+}
+
+.order-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+.order-info strong {
+    color: #333;
+}
+
+/* ✅ Ordered Products */
+.ordered-products {
+    margin-bottom: 30px;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.products-table th, .products-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.products-table th {
+    background-color: #f4f4f4;
+}
+
+.product-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* ✅ Order Actions */
+.order-actions {
+    margin-top: 20px;
+}
+
+.order-actions .btn {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.order-actions .cancel {
+    background-color: #e74c3c;
+}
+
+.order-actions .cancel:hover {
+    background-color: #c0392b;
+}
+
+.order-actions .btn:hover {
+    background-color: #2ecc71;
+}

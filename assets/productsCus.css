@@ -1,0 +1,131 @@
+/* ✅ تنسيق صفحة المنتجات */
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* ✅ الفلاتر */
+.filters {
+    width: 25%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categories h3, .price-range h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* ✅ تحديد السعر */
+.price-slider {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* ✅ عرض المنتجات */
+.products-list {
+    width: 70%;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 أعمدة */
+    gap: 20px; /* المسافة بين العناصر */
+}
+
+.product {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product span {
+    color: #27ae60;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product button {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-top: 10px; /* لإضافة مسافة بين الزر وسعر المنتج */
+}
+
+.product button:hover {
+    background: #2ecc71;
+}
+
+/* ✅ الفئات تحت بعضها */
+.categories label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* ✅ سعر المنتج على شريط التمرير */
+.price-range {
+    margin-top: 20px;
+}
+
+.range-values {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.range-values span {
+    font-weight: bold;
+    color: #27ae60; /* اللون الأخضر */
+}
+
+/* ✅ تحسين التمرير */
+#priceRange {
+    width: 100%;
+    accent-color: #27ae60; /* اللون الأخضر */
+}
+
+input[type="checkbox"]:checked {
+    background-color: #27ae60; /* اللون الأخضر */
+    border-color: #27ae60;
+}
+
+input[type="checkbox"]:hover {
+    background-color: #2ecc71; /* لون أخضر فاتح عند التمرير */
+}
+
+input[type="checkbox"] {
+    accent-color: #27ae60; /* اللون الأخضر عند التحديد */
+}

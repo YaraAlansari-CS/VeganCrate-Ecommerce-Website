@@ -1,0 +1,128 @@
+/* ✅ تنسيق الصفحة العامة */
+.cart-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.cart-container h2 {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+/* ✅ تنسيق المحتوى بحيث يحتوي على جدول + ملخص الطلب */
+.cart-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* ✅ جدول المنتجات */
+.cart-table {
+    width: 80%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة الظل */
+}
+
+.cart-table th, .cart-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.cart-table th {
+    background: #f8f8f8;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+/* ✅ أزرار التحكم في الكمية */
+.quantity-btn {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.quantity-btn:hover {
+    background: #219150;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+/* ✅ زر الحذف */
+.remove-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: red;
+}
+
+.remove-btn:hover {
+    color: darkred;
+}
+
+/* ✅ ملخص الطلب */
+.cart-summary {
+    width: 30%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة الظل */
+}
+
+.cart-summary h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cart-summary p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.cart-summary .total {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ✅ زر "Proceed to Checkout" */
+.checkout-btn {
+    display: block; /* أو inline-block حسب الحاجة */
+    background: #27ae60;
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.checkout-btn:hover {
+    background: #2ecc71;
+}

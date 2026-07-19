@@ -1,0 +1,199 @@
+/* ✅ تنسيق الصفحة العامة */
+.checkout-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.checkout-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* ✅ تنسيق المحتوى بحيث يحتوي على جدول + ملخص الطلب */
+.checkout-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* ✅ ملخص الطلب (Moved to the top right) */
+.order-summary {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.order-summary p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.order-summary .total {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ✅ زر "Place Order" */
+.btn {
+    display: block;
+    background: #27ae60;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+    width: 100%;
+    border: none; /* إزالة الحدود السوداء */
+}
+
+.btn:hover {
+    background: #2ecc71;
+}
+
+/* ✅ جدول المنتجات */
+.checkout-details {
+    width: 60%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.checkout-table th, .checkout-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.checkout-table th {
+    background: #f8f8f8;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.product-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+/* ✅ تخصيص حقل النص في صفحة التشيك أوت باستخدام كلاس checkout-input */
+.checkout-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* ✅ تحسين مظهر حقول النص */
+.checkout-input:focus {
+    border-color: #27ae60;
+    box-shadow: 0 0 5px rgba(39, 174, 96, 0.5);
+}
+
+/* ✅ تخصيص select في صفحة التشيك أوت */
+.checkout-input {
+    width: 95%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.checkout-input:focus {
+    border-color: #27ae60;
+    box-shadow: 0 0 5px rgba(39, 174, 96, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+#add-address-btn {
+    display: none;
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 20px; /* Adds space below the container */
+}
+
+#add-address-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#add-address-btn:active {
+    background-color: #003d80; /* Even darker blue on click */
+}
+
+#add-address-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+
+
+
+
+
+
+
+/* Match label styles with "Your Address:" */
+    .checkout-details h3,
+    .checkout-details label {
+        font-size: 18px; /* Adjust size to match "Your Address:" */
+        font-weight: bold; /* Make it bold */
+        color: #333; /* Ensure consistent font color */
+        margin-bottom: 10px;
+    }
