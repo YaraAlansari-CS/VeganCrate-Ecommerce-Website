@@ -1,0 +1,17 @@
+# Enable the rewrite engine (for clean URLs later)
+RewriteEngine On
+
+# Prevent users from seeing the list of files inside any folder (for security!)
+Options -Indexes
+
+# Block direct browser access to your sensitive backend folders
+RewriteRule ^(backend|includes|database|logs|data|vendor)/ - [F,L]
+
+# Protect the .htaccess file from being viewed
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Set the default page to load index.php the main page
+DirectoryIndex frontend/index.php index.php
